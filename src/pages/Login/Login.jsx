@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import Styles from "./Login.module.css";
-import {FiChevronDown} from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 const Image = lazy(() => import("../../components/Image/Image"));
 
 const countTap = 5;
@@ -120,8 +120,8 @@ const Login = () => {
 
     const handbleClickScrolldown = () => {
         let height = window.innerHeight;
-        window.scrollTo({ top: 0});
-        window.scrollTo({ top: height,behavior: 'smooth'});
+        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: height, behavior: 'smooth' });
     }
     return (
         <>
@@ -183,164 +183,164 @@ const Login = () => {
                                     <div className={Styles.tab1__box_slides_product}>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum3}`} style={{ "--i": 2, "--colums": 1 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi1.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi2.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi3.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi4.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>} >
-                                                <div className={Styles.tab1__item} style={{"--rows" : 5}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 5 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi5.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum2}`} style={{ "--i": 1, "--colums": 2 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi6.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi7.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi8.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi9.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum1}`} style={{ "--i": 0, "--colums": 3 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi10.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi11.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi12.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi13.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum0}`} style={{ "--i": -1.5, "--colums": 4 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi14.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi15.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi16.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi17.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum1}`} style={{ "--i": 0, "--colums": 5 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi18.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi19.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi20.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi21.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum2}`} style={{ "--i": 1, "--colums": 6 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi22.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi23.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi24.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi25.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                         </div>
                                         <div className={`${Styles.tab1__colum} ${Styles.tab1__colum3}`} style={{ "--i": 2, "--colums": 7 }}>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 1}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 1 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi26.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 2}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 2 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi27.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 3}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 3 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi28.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 4}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 4 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi29.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
                                             <Suspense fallback={<div className={Styles.tab1__item}></div>}>
-                                                <div className={Styles.tab1__item} style={{"--rows" : 5}}>
+                                                <div className={Styles.tab1__item} style={{ "--rows": 5 }}>
                                                     <Image className={Styles.tab1__colum_image} src={require("../../assets/images/buatoi30.jpeg")} ></Image>
                                                 </div>
                                             </Suspense>
@@ -875,74 +875,106 @@ const Login = () => {
 
                     <div className={`${Styles.tap} ${Styles.tap2}`}>
                         <div className={Styles.tap2__box_tap2}>
-                                <div className={Styles.tap2__left}>
-                                    <div className={`${Styles.tap2_image} ${Styles.tap2_image1}`}>
-                                        <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
-                                    </div>
-                                    <div className={`${Styles.tap2_image} ${Styles.tap2_image2}`}>
-                                        <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
-                                    </div>
-                                    <div className={`${Styles.tap2_image} ${Styles.tap2_image3}`}>
-                                        <img src={require("../../assets/images/buatoi3.jpeg")} alt="" />
-                                    </div>
-                                    <div className={`${Styles.tap2_image} ${Styles.tap2_image4}`}>
-                                        <img src={require("../../assets/images/buatoi4.jpeg")} alt="" />
-                                    </div>
-                                    <div className={`${Styles.tap2_inpput}`}>
-                                        <p>Bữa tối với món gà dễ làm</p>
-                                    </div>
+                            <div className={Styles.tap2__left}>
+                                <div className={`${Styles.tap2_image} ${Styles.tap2_image1}`}>
+                                    <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
                                 </div>
-                                <div className={Styles.tap2__right}>
-                                    <div className={Styles.tap2__box_right}>
-                                        <h1>Tìm kiếm ý tưởng</h1>
-                                        <p>Bạn muốn thử điều gì tiếp theo? Hãy<br/>nghĩ về ý tưởng bạn yêu thích—như<br/>"bữa tối với món gà dễ làm"—và<br/>xem bạn tìm thấy gì.</p>
-                                        <p className={Styles.button}>
-                                            Khám phá
-                                        </p>
-                                    </div>
+                                <div className={`${Styles.tap2_image} ${Styles.tap2_image2}`}>
+                                    <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
                                 </div>
+                                <div className={`${Styles.tap2_image} ${Styles.tap2_image3}`}>
+                                    <img src={require("../../assets/images/buatoi3.jpeg")} alt="" />
+                                </div>
+                                <div className={`${Styles.tap2_image} ${Styles.tap2_image4}`}>
+                                    <img src={require("../../assets/images/buatoi4.jpeg")} alt="" />
+                                </div>
+                                <div className={`${Styles.tap2_inpput}`}>
+                                    <p>Bữa tối với món gà dễ làm</p>
+                                </div>
+                            </div>
+                            <div className={Styles.tap2__right}>
+                                <div className={Styles.tap2__box_right}>
+                                    <h1>Tìm kiếm ý tưởng</h1>
+                                    <p>Bạn muốn thử điều gì tiếp theo? Hãy<br />nghĩ về ý tưởng bạn yêu thích—như<br />"bữa tối với món gà dễ làm"—và<br />xem bạn tìm thấy gì.</p>
+                                    <p className={Styles.button}>
+                                        Khám phá
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={`${Styles.tap} ${Styles.tap3}`}>
-                    <div className={Styles.tap3__box_tap3}>
-                                <div className={Styles.tap3__left}>
-                                    <div className={Styles.tap3__box_left}>
-                                        <h1>Lưu ý tưởng bạn thích</h1>
-                                        <p>Thu thập nội dung bạn yêu thích để<br/>bạn có thể quay lại xem sau.</p>
-                                        <p className={Styles.button}>
-                                            Khám phá
-                                        </p>
+                        <div className={Styles.tap3__box_tap3}>
+                            <div className={Styles.tap3__left}>
+                                <div className={Styles.tap3__box_left}>
+                                    <h1>Lưu ý tưởng bạn thích</h1>
+                                    <p>Thu thập nội dung bạn yêu thích để<br />bạn có thể quay lại xem sau.</p>
+                                    <p className={Styles.button}>
+                                        Khám phá
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={Styles.tap3__right}>
+                                <div className={Styles.tab3__box_right}>
+                                    <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image1}`}>
+                                        <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
+                                        <p>Dương sỉ<br />trang trí</p>
                                     </div>
+                                    <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image2}`}>
+                                        <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
+                                        <p>Dương sỉ trang trí</p>
+                                    </div>
+                                    <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image3}`}>
+                                        <img src={require("../../assets/images/buatoi3.jpeg")} alt="" />
+                                        <p>Dương sỉ trang trí</p>
+                                    </div>
+                                    <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image4}`}>
+                                        <img src={require("../../assets/images/buatoi4.jpeg")} alt="" />
+                                        <p>Dương sỉ trang trí</p>
+                                    </div>
+                                    <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image5}`}>
+                                        <img src={require("../../assets/images/buatoi5.jpeg")} alt="" />
+                                        <p>Dương sỉ trang trí</p>
+                                    </div>
+
                                 </div>
-                                <div className={Styles.tap3__right}>
-                                   <div className={Styles.tab3__box_right}>
-                                       <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image1}`}>
-                                            <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
-                                            <p>Dương sỉ<br/>trang trí</p>
-                                       </div>
-                                       <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image2}`}>
-                                            <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
-                                            <p>Dương sỉ trang trí</p>
-                                       </div>
-                                       <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image3}`}>
-                                            <img src={require("../../assets/images/buatoi3.jpeg")} alt="" />
-                                            <p>Dương sỉ trang trí</p>
-                                       </div>
-                                       <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image4}`}>
-                                            <img src={require("../../assets/images/buatoi4.jpeg")} alt="" />
-                                            <p>Dương sỉ trang trí</p>
-                                       </div>
-                                       <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image5}`}>
-                                            <img src={require("../../assets/images/buatoi5.jpeg")} alt="" />
-                                            <p>Dương sỉ trang trí</p>
-                                       </div>
-                                      
-                                   </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className={`${Styles.tap} ${Styles.tap4}`}></div>
-                    <div className={`${Styles.tap} ${Styles.tab5}`}></div>
+                    <div className={`${Styles.tap} ${Styles.tap4}`}>
+                        <div className={Styles.tap4__box_tap4}>
+                            <div className={Styles.tap4__left}>
+                                <div className={Styles.tap4__box_left}>
+                                    <img src={require("../../assets/images/bgtap4.png")}></img>
+                                </div>
+                            </div>
+                            <div className={Styles.tap4__right}>
+                                <div className={Styles.tap4__box_right}>
+                                    <h1>Xem, làm, thử,<br />thực hiện</h1>
+                                    <p>Điều tuyệt nhất trên Pinterest là khám<br />phá những nội dung và ý tưởng mới từ<br />mọi người khắp thế giới.</p>
+                                    <p className={Styles.button}>
+                                        Khám phá
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`${Styles.tap} ${Styles.tab5}`}>
+                        <div className={Styles.tap5__box_tap5}>
+                            <div className={Styles.tap5__right}>
+                                <div className={Styles.tap5__box_right}>
+                                    <p>Đăng ký để<br/>nhận thêm ý<br/> tưởng</p>
+                                </div>
+                            </div>
+                            <div className={Styles.tap5__left}>
+                                <div className={Styles.tap5__box_left}>
+                                    <div className={Styles.tab5__box_logg}>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
