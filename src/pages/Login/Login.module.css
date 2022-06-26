@@ -12,6 +12,16 @@ body{
     scrollbar-width: none;  
 }
 
+*{
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+}
+
 .main{
     width: 100%;
     height: 500vh;
@@ -747,7 +757,7 @@ body{
 }
 
 .tab5{
-    background-color: rgba(155, 155, 155, 0.725);
+    background-color: aqua;
     width: 100%;
     height: 100vh;
 }
@@ -765,7 +775,7 @@ body{
 }
 
 .tap5__right{
-    width: 40%;
+    width: 50%;
     position: relative;
 }
 
@@ -775,7 +785,229 @@ body{
     top: 50%;
     left: 0px;
     transform: translateY(-50%);
-    font-size: 80px;
-    color: #fff;
+    font-size: 70px;
+    color: black;
     font-weight: 900;
+    
+}
+
+.tap5__box_right p{
+    text-shadow: 1px 1px 5px black;
+}
+
+.tap5__left{
+    width: 50%;
+    position: relative;
+}
+
+.tap5__box_left{
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(194, 194, 194), 0px 5px rgb(195, 195, 195) 0, 0);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.tab5__box_logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tab5__box_logo svg{
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
+    fill: red;
+}
+
+.tab5__box_logo svg path{
+    width: 300px;
+    transform: scale(1.375);
+}
+
+.tab5__box_title h2{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tab5__box_title p{
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tab5__box_input{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.tab5__box_input p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    margin: 5px 5px 5px 10px;
+}
+
+.tab5__box_input input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+.tab5__box_input input:hover{
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.tab5__box_input input:focus{
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.tab5__box_button{
+    width: 80%;
+    margin: auto;
+   
+}
+
+.tab5__box_button button{
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.tab5__box_button button:active{
+    background-color: rgb(219, 0, 0);
+}
+
+.tab5__or {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin: 0px 0px;
+}
+
+button.tab5__btn_fb{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #0074e8;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+button.tab5__btn_fb:active{
+    background-color: #0060c0;
+}
+
+.tab5__btn_fb .tab5__icons{
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.tab5__btn_fb p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    
+ 
+}
+
+button.tab5__btn_gg{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    border: 1px solid rgb(200, 200, 200);
+
+}
+
+button.tab5__btn_gg:active{
+    background-color: #0060c0;
+}
+
+.tab5__btn_gg .tab5__icons{
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.tab5__btn_gg p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    color: black;
+    font-weight: 400;
+}
+
+button.tab5__btn_gg:active{
+    background-color: rgb(227, 227, 227);
+}
+
+.tab5__box_fotter{
+    margin: 30px 0px;
+}
+
+.tab5__box_fotter p{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(102, 102, 102);
+}
+
+.tab5__box_fotter p span{
+    font-weight: 600;
+    color: rgb(35, 35, 35);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab5__box_fotter p span:hover{
+    border-bottom: 1px solid rgb(35, 35, 35);
 }
