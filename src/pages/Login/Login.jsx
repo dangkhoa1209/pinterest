@@ -3,7 +3,10 @@ import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import Styles from "./Login.module.css";
 import { FiChevronDown } from "react-icons/fi";
+import PopupLogin from "../../components/PopupLogin/PopupLogin";
+import {signInWithGoogle, auth} from "../../firebase/firebase"
 const Image = lazy(() => import("../../components/Image/Image"));
+
 
 const countTap = 5;
 
@@ -13,6 +16,13 @@ const Login = () => {
     const titleChange = useRef(false);
     const iconScrollDown = useRef(false);
     const [bannerTapActive, setBannerTapActive] = useState(0);
+    const [popupLogin, setPopupLogin] = useState(false);
+
+
+        // auth.onAuthStateChanged((user) => {
+        //     console.log(user);
+        // })
+
 
 
     useEffect(() => {
@@ -20,13 +30,11 @@ const Login = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         slidesBanner();
         const interval = setInterval(slidesBanner, 5000);
-
         window.addEventListener('scroll', eventScroll);
         return () => {
             window.removeEventListener('scroll', eventScroll);
             clearInterval(interval);
         }
-
     }, []);
 
     var scrollY = 0;
@@ -129,6 +137,14 @@ const Login = () => {
         <>
             <div className={Styles.main}>
                 <div className={Styles.box_main} ref={main}>
+
+                    {popupLogin && 
+                        <PopupLogin
+                        setPopupLogin = {setPopupLogin}
+                        ></PopupLogin>
+                    }
+                    
+
                     <div className={`${Styles.tap} ${Styles.tap1}`}>
                         <div className={Styles.tap1__box_tap1}>
 
@@ -150,7 +166,7 @@ const Login = () => {
                                         <p>blog</p>
                                     </div>
                                     <div className={Styles.tap1__button}>
-                                        <button className={Styles.tap1__btn_login}>đăng nhập</button>
+                                        <button className={Styles.tap1__btn_login} onClick={() => setPopupLogin(true)}>đăng nhập</button>
                                         <button className={Styles.tap1__btn_register}>đăng ký</button>
                                     </div>
                                 </div>
@@ -920,23 +936,23 @@ const Login = () => {
                                 <div className={Styles.tab3__box_right}>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image1}`}>
                                         <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
-                                        <p>Dương sỉ<br />trang trí</p>
+                                        <p>Bạch thuộc<br />xào mướp</p>
                                     </div>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image2}`}>
                                         <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
-                                        <p>Dương sỉ trang trí</p>
+                                        <p>Cơm trắng & thịt kho</p>
                                     </div>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image3}`}>
                                         <img src={require("../../assets/images/buatoi3.jpeg")} alt="" />
-                                        <p>Dương sỉ trang trí</p>
+                                        <p>Kim chi</p>
                                     </div>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image4}`}>
                                         <img src={require("../../assets/images/buatoi4.jpeg")} alt="" />
-                                        <p>Dương sỉ trang trí</p>
+                                        <p>Gà rán</p>
                                     </div>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image5}`}>
                                         <img src={require("../../assets/images/buatoi5.jpeg")} alt="" />
-                                        <p>Dương sỉ trang trí</p>
+                                        <p>Bánh tráng cuốn</p>
                                     </div>
 
                                 </div>
