@@ -4,7 +4,9 @@ import { FcGoogle } from 'react-icons/fc';
 import Styles from "./Login.module.css";
 import { FiChevronDown } from "react-icons/fi";
 import PopupLogin from "../../components/PopupLogin/PopupLogin";
-import {signInWithGoogle, auth} from "../../firebase/firebase"
+import {googleProvider, auth} from "../../firebase/firebase";
+import {signInWithPopup } from 'firebase/auth';
+import { useNavigate } from "react-router-dom";
 const Image = lazy(() => import("../../components/Image/Image"));
 
 
@@ -17,13 +19,7 @@ const Login = () => {
     const iconScrollDown = useRef(false);
     const [bannerTapActive, setBannerTapActive] = useState(0);
     const [popupLogin, setPopupLogin] = useState(false);
-
-
-        // auth.onAuthStateChanged((user) => {
-        //     console.log(user);
-        // })
-
-
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -133,6 +129,20 @@ const Login = () => {
         window.scrollTo({ top: 0 });
         window.scrollTo({ top: height, behavior: 'smooth' });
     }
+
+
+    const handleClickButtonLoginWithGG = () => {
+        console.log("data");
+        signInWithPopup(auth, googleProvider)
+            .then(data => {
+                navigate("/");
+            })
+            .catch(e => {
+                console.log(e);
+            }) 
+    }
+
+
     return (
         <>
             <div className={Styles.main}>
@@ -936,7 +946,7 @@ const Login = () => {
                                 <div className={Styles.tab3__box_right}>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image1}`}>
                                         <img src={require("../../assets/images/buatoi1.jpeg")} alt="" />
-                                        <p>Bạch thuộc<br />xào mướp</p>
+                                        <p>Bạch tuộc<br />xào mướp</p>
                                     </div>
                                     <div className={`${Styles.tab3__box_image} ${Styles.tab3__box_image2}`}>
                                         <img src={require("../../assets/images/buatoi2.jpeg")} alt="" />
@@ -1020,9 +1030,9 @@ const Login = () => {
                                         </button>
                                     </div>
                                     <div className={Styles.tab5__box_button}>
-                                        <button className={Styles.tab5__btn_gg}>
+                                        <button className={Styles.tab5__btn_gg} onClick={handleClickButtonLoginWithGG}>
                                             <FcGoogle className={Styles.tab5__icons}/>
-                                            <p>Tiếp tục với với Facebook</p>
+                                            <p>Tiếp tục với với Google</p>
                                         </button>
                                     </div>
                                     <div className={Styles.tab5__box_fotter}>

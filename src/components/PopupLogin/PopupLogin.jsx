@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 const PopupLogin = ({setPopupLogin}) => {
 
     const navigate = useNavigate();
+    
     const popupCLick = (e) => {
         e.stopPropagation();
         console.log("sdfsdf fsdf");
